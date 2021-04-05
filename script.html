@@ -9,8 +9,13 @@
 <body>
     <script>
         var text = '';
-        text += window.location.search;
-        
+        if (text === undefined)
+            var text = window.location.search;
+        else
+            text += window.location.search;
+
+
+        document.write(text);
     </script>    
 </body>
 </html>
