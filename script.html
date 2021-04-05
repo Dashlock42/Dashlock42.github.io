@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <p class='txt'>
+
+    </p>
     <script>
         if (text === undefined)
             var text = window.location.search;
@@ -14,7 +17,10 @@
             text += window.location.search;
 
 
-        document.write(text);
+        var p = document.getElementsByClassName('txt');
+        consoel.log(p);
     </script>    
 </body>
 </html>
+
+
